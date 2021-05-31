@@ -14,7 +14,7 @@ def monte_carlo(iters):
           dist=(x**2+y**2)**0.5
           if (dist <1):
                points_in+=1
-     return points_in/iters        
+     return (4*points_in)/iters        
                
 
 class TestWallis(unittest.TestCase):
