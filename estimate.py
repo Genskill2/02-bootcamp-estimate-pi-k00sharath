@@ -2,8 +2,8 @@ import math
 import unittest
 import random
 def wallis(no_of_iterations):
-     pi_approx=0
-     for i in range(no_of_iterations):
+     pi_approx=1
+     for i in range(1,no_of_iterations+1):
         pi_approx=pi_approx*(4*(i**2))/(4*(i**2)-1)
      return pi_approx
 def monte_carlo(iters):
@@ -12,7 +12,7 @@ def monte_carlo(iters):
           x=random.random()
           y=random.random()
           dist=(x**2+y**2)**0.5
-          if (dist <=1):
+          if (dist <1):
                points_in+=1
      return points_in/iters        
                
