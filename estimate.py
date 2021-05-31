@@ -11,7 +11,7 @@ def monte_carlo(iters):
      for i in range(iters):
           x=random.random()
           y=random.random()
-          dist=(x**2+y**2)^0.5
+          dist=(x^2+y^2)^0.5
           if (dist <=1):
                points_in+=1
      return points_in/iters        
