@@ -1,5 +1,11 @@
 import math
 import unittest
+def wallis(no_of_iterarions):
+     pi_approx=0
+     for i in range(no_of_iterations):
+        pi_approx+=(4*i^2)/(4*i^2-1)
+     return pi_approx
+    
 
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
